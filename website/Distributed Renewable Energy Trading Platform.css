@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb; /* Light background for contrast */
+}
+
+/* Header Styling with Background Image */
+.header-image {
+    background-image: url('images/download.jpeg'); /* Header background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker background for navigation */
+    border-radius: 8px;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+header nav ul li a:hover {
+    background-color: #4CAF50; /* Highlight color on hover */
+    border-radius: 4px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-top: -1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow effect */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Section-Specific Styling */
+.section-content {
+    display: flex;
+    align-items: center;
+}
+
+.content-image {
+    width: 25%; /* Larger image for impact */
+    margin-right: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Image scale effect */
+}
+
+.content-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* YouTube Video Container */
+.video-container {
+    max-width: 50%;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect for video */
+    margin-top: 1rem;
+}
+
+/* FAQ Section Styling */
+.faq-item {
+    margin: 1rem 0;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Button Styling (Optional for future buttons) */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .header-image {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+
+    .content-image {
+        width: 80%; /* Larger image width on small screens */
+        margin-bottom: 1rem;
+    }
+
+    .video-container iframe {
+        width: 100%;
+    }
+}
